@@ -19,16 +19,16 @@ services:
     environment: 
       XDEBUG_CONFIG: remote_host=192.168.50.75 #Подставить свой удаленный IP
       PHP_IDE_CONFIG: "serverName=docker"
-      DATABASE_NAME: testing
+      DATABASE_NAME: socketserv
       DATABASE_USER: root
       DATABASE_PASSWORD: root
   db:
-    container_name: testing
+    container_name: socketserv
     build: ./docker/mysql
     ports:
       - "3306:3306"
     environment:
-      MYSQL_DATABASE: testing
+      MYSQL_DATABASE: socketserv
       MYSQL_USER: root
       MYSQL_PASSWORD: root
       MYSQL_ROOT_PASSWORD: root
