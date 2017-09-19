@@ -15,6 +15,7 @@
     },
     "require": {
         "php": ">=5.5.9",
+        "cboden/ratchet": "^0.3.6",
         "doctrine/doctrine-bundle": "^1.6",
         "doctrine/orm": "^2.5",
         "incenteev/composer-parameter-handler": "^2.0",
